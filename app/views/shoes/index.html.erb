@@ -1,0 +1,17 @@
+<div class='jumbotron'>
+	<h1><center>Cute Shoes!</center></h1>
+</div>
+<div class="container">
+	<div class="col sm 4 list-group">
+		<ul>
+			<% @shoes.each do |shoe| %>
+			<li class="list-group"> 
+			<%= shoe.brand %> 
+			<%= shoe.model %>
+			<%= image_tag shoe.image_url %>
+			<%=link_to "Show Page", shoe_path(shoe), class:"btn btn-sm btn-danger" %>
+			</li>
+			<% end %>
+		</ul>
+	</div>
+</div>
