@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root to: "shoes#index"
+  root to: "shoes#splash"
   resources :shoes
   
 

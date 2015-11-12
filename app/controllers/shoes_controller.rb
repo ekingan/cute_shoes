@@ -1,4 +1,7 @@
 class ShoesController < ApplicationController
+  def splash
+  end
+
   def index
     @shoes = Shoe.all
   end
