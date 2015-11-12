@@ -1,2 +1,3 @@
-<h1>Shoes#show</h1>
-<p>Find me in app/views/shoes/show.html.erb</p>
+<% @shoess.each do |shoe| %>
+  <%= link_to 'Show page', shoe_path(shoe) %>
+<% end %>
