@@ -1,3 +1,4 @@
-<% @shoess.each do |shoe| %>
-  <%= link_to 'Show page', shoe_path(shoe) %>
-<% end %>
+<h1>Shoes</h1>
+	<%= image_tag @shoe.image_url %>
+<h1><%= @shoe.brand %></h1>
+<h2>by <%= @shoe.model %></h2>

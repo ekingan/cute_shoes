@@ -1,2 +1,11 @@
-<h1>Shoes#new</h1>
-<p>Find me in app/views/shoes/new.html.erb</p>
+
+<h1>What shoes do you think are cute?</h1>
+<%= form_for @shoe do |f| %>
+  <span>Brand: </span>
+  <%= f.text_field :brand, required: true %><br>
+  <span>Model: </span>
+  <%= f.text_field :model, required: true %><br>
+  <span>Image: </span>
+  <%= f.url_field :image_url, required: true %><br>
+  <%= f.submit %>
+<% end %>
